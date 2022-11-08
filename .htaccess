@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^upgan.visjs.org [NC,OR]
-RewriteCond %{HTTP_HOST} !^www.upgan.visjs.org [NC]
+RewriteCond %{HTTP_HOST} ^www.upgan.visjs.org [NC]
 RewriteRule ^(.*)$ https://slot.docs.ddo.sfa.atos.net/$1 [L,R=301,NC]
 </IfModule>
